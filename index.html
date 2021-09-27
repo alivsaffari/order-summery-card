@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <link rel="stylesheet" href="tailwind.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="bg-mobile-background md:bg-desktop-background md:bg-contain bg-no-repeat bg-paleBlue">
+
+  <div id="card" class="flex flex-col mx-auto justify-center content-center w-11/12 sm:w-1/5 h-screen">
+
+    <img id="hero-image" class="rounded-t-3xl" src="/images/illustration-hero.svg" alt="hero-music-image">
+
+    <div id="card-info" class="flex flex-col rounded-b-3xl bg-white">
+
+      <h1 id="title" class="text-center font-black text-2xl p-6 pb-0">Order Summary</h1>
+
+      <div id="description" class="text-center text-desaturatedBlue py-3 px-6 md:px-12">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</div>
+      
+      <div id="plan" class="flex justify-around bg-veryPaleBlue rounded-xl px-5 py-3 w-10/12 mx-auto items-center">
+        <img id="music-icon" src="/images/icon-music.svg">
+        
+        <div id="plan-price-container" class="flex flex-col flex-grow text-left pl-6">
+          <div id="plan-name" class="font-bold">Annual Plan</div>
+          <div id="plan-price" class="text-desaturatedBlue">$59.99/year</div>
+        </div>
+        
+        <a href="#" id="plan-change-link" class="font-bold underline text-brightBlue hover:no-underline hover:text-opacity-25">Change</a>
+      </div>
+
+      <button id="payment-button" class="rounded-xl p-3 bg-brightBlue text-veryPaleBlue font-bold w-10/12 mx-auto my-6 shadow-2xl hover:opacity-50">Proceed to Payment</button>
+      <a href="#" id="cancel-link" class="text-center p-6 font-bold text-desaturatedBlue text-opacity-70 hover:text-opacity-100">Cancel Order</a>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/alivsaffari">Ali Saffari</a>.
+  </div>
+
+</body>
+</html>
